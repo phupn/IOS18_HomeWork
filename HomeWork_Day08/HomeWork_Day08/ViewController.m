@@ -40,5 +40,11 @@
         
     }];
 }
+- (IBAction)demoIphone:(id)sender {
+    PresentModalView *PresentVC = [[PresentModalView alloc] initWithNibName:@"PresentVC" bundle:nil];
+    [self presentViewController:PresentVC animated:YES completion:^{
+        
+    }];
+}
 
 @end

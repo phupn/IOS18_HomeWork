@@ -12,13 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    //Đây là cách load Storyboard bằng lập trình, không sử dụng cấu hình từ Project Setting
-    UIStoryboard *mainStoryBoard = [UIStoryboard storyboardWithName:@"Storyboard"
-                                                             bundle:nil];
-    
-    self.window.rootViewController = [mainStoryBoard instantiateInitialViewController];
     [self.window makeKeyAndVisible];
 
     // Override point for customization after application launch.
