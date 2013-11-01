@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -16,25 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photoshop-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="x9C-Ke-fEq">
-                                <rect key="frame" x="96" y="20" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Photoshop-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="x9C-Ke-fEq">
+                                <rect key="frame" x="96" y="40" width="128" height="116"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Indesign-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-60-xxm">
-                                <rect key="frame" x="96" y="168" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Indesign-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="d1X-60-xxm">
+                                <rect key="frame" x="96" y="176" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dreamweaver-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Iz-fY-EeU">
-                                <rect key="frame" x="96" y="316" width="128" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dreamweaver-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Iz-fY-EeU">
+                                <rect key="frame" x="96" y="324" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Iz-fY-EeU" firstAttribute="top" secondItem="d1X-60-xxm" secondAttribute="bottom" constant="20" id="CJn-ds-WTM"/>
+                            <constraint firstAttribute="centerY" secondItem="d1X-60-xxm" secondAttribute="centerY" id="Nvo-Ne-UOp"/>
+                            <constraint firstItem="d1X-60-xxm" firstAttribute="top" secondItem="x9C-Ke-fEq" secondAttribute="bottom" constant="20" id="TtD-Cx-QQf"/>
+                            <constraint firstAttribute="centerX" secondItem="d1X-60-xxm" secondAttribute="centerX" id="p7Y-0x-AfN"/>
+                            <constraint firstItem="d1X-60-xxm" firstAttribute="leading" secondItem="5Iz-fY-EeU" secondAttribute="leading" id="qln-eF-tSw"/>
+                            <constraint firstItem="d1X-60-xxm" firstAttribute="leading" secondItem="x9C-Ke-fEq" secondAttribute="leading" id="sT4-pr-GLj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="iconDw" destination="5Iz-fY-EeU" id="uaw-KM-VuR"/>
                         <outlet property="iconId" destination="d1X-60-xxm" id="Ao0-Fy-fsm"/>
                         <outlet property="iconPS" destination="x9C-Ke-fEq" id="daj-Yi-XwB"/>
+                        <outlet property="mainView" destination="kh9-bI-dsS" id="FAb-m2-eOv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
